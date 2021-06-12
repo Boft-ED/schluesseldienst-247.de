@@ -1,0 +1,71 @@
+
+.block-footer {
+    padding: 60px 0px 55px 0px;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .site-name {
+            color: $yellow-color; 
+            font-size: 24px;
+        }
+        .phone-site {
+            color: $main-color;
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration: underline;
+        }
+        .phone-site::before {
+            @include before;
+                background-image: url(../img/icon/phone-green.svg);
+                height: 35px;
+                width: 35px;
+                margin-right: 10px;
+                vertical-align: middle;
+        }
+        .nav-menu {
+            ul {
+                display: inline-flex;
+                .nav-item {
+                    margin-right: 35px;
+                    a {
+                        color: $main-color;
+                        font-size: 24px;
+                    }
+                }
+                .nav-item:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &__bottom {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            font-size: 24px;
+        }
+        .nav-menu-services {
+            ul {
+                display: inline-flex;
+                .nav-item {
+                    margin-right: 10px;
+                    padding-right: 10px;
+                    border-right: 1px solid $main-color;
+                    a {
+                        color: $main-color;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+                }
+                .nav-item:last-child {
+                    border: 0px;
+                    margin-right: 0px;
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}

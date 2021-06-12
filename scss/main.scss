@@ -1,0 +1,13 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "base/base";
+
+//layout
+@import "layout/header";
+@import "layout/footer";
+
+//pages 
+@import "pages/home";
+@import "pages/areas";
+@import "pages/sitemap";
+@import "pages/сountries";

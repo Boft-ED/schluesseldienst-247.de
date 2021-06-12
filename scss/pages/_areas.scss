@@ -1,0 +1,20 @@
+.block-areas {
+    padding-top: 30px;
+    &__content {
+        .areas-btn {
+            margin-bottom: 80px;
+            a {
+                position: relative;
+                color: $main-color;
+                background-color: $grey-color;
+                padding: 20px 10px;
+                border-radius: 10px;
+            }
+            a:hover {
+                color: $white-color;
+                background-color: $yellow-color;
+                transition: 0.3s;
+            }
+        }
+    }
+}
